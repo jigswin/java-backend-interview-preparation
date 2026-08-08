@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Java-Backend-Interview-Preparation.iml" filepath="$PROJECT_DIR$/.idea/Java-Backend-Interview-Preparation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java-backend-interview-preparation.iml" filepath="$PROJECT_DIR$/java-backend-interview-preparation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-backend-interview-preparation/java-backend-interview-preparation.iml" filepath="$PROJECT_DIR$/java-backend-interview-preparation/java-backend-interview-preparation.iml" />
     </modules>
   </component>
 </project>
