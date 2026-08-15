@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94f30dcc-5e95-473c-a12a-25590c3688d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/strings/PrintFrequency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java-Backend-Interview-Preparation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/.idea/Java-Backend-Interview-Preparation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/strings/FirstNonRepeatingCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/strings/FirstNonRepeatingCharacter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/arrays/RemoveDuplicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/collections/collection_details" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/FruitFrequency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/MostFrequentFruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/TwoSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/hashmap_details.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindDuplicateElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FirstNonRepeatingElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/ListContainsDuplicateOrNot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/RemoveDuplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/strings/PrintFrequency.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/strings/PrintFrequency.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +47,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Anagram.executor": "Run",
+    "Application.FindDuplicateElements.executor": "Run",
     "Application.FirstNonRepeatingCharacter.executor": "Run",
+    "Application.FirstNonRepeatingElement.executor": "Run",
     "Application.FirstRepeatingChar.executor": "Run",
+    "Application.FruitFrequency.executor": "Run",
+    "Application.ListContainsDuplicateOrNot.executor": "Run",
+    "Application.MostFrequentFruit.executor": "Run",
     "Application.PalindromeString.executor": "Run",
     "Application.PrintFrequency.executor": "Run",
+    "Application.RemoveDuplicate.executor": "Run",
     "Application.ReverseString.executor": "Run",
     "Application.StringUtils.executor": "Run",
+    "Application.TwoSum.executor": "Run",
     "Application.firstRepeatingChar.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
