@@ -1,0 +1,105 @@
+WHERE vs HAVING
+ -> WHERE → individual rows ko filter karta hai.
+ -> HAVING -> GROUP BY ke baad groups ko filter karta hai.
+
+
+* Pehle ₹50,000 se zyada salary wale employees filter karo → phir unko department-wise group karo.
+select department, count(*)
+from employee
+where salary > 50000
+group by department;
+
+
+* Pehle department-wise grouping karo → phir sirf woh departments rakho jahan employees 5 se zyada hain
+SELECT department, COUNT(*)
+FROM Employee
+GROUP BY department
+HAVING COUNT(*) > 5;
+
+* Aise departments find karo jisme 1 se zyada employees hain.
+SELECT dept_id, COUNT(*)
+FROM Employee
+GROUP BY dept_id
+HAVING COUNT(*) > 1;
+
+* Company ki total salary, average salary, highest salary aur lowest salary ek hi query me nikalo.
+SELECT
+    SUM(salary) AS total_salary,
+    AVG(salary) AS average_salary,
+    MAX(salary) AS max_salary,
+    MIN(salary) AS min_salary
+FROM Employee;
+
+
+* Second highest salary find karo.
+SELECT DISTINCT salary
+FROM Employee
+ORDER BY salary DESC
+OFFSET 1
+LIMIT 1;
+
+
+* Aisi salaries find karo jo ek se zyada employees ko mili hain.
+SELECT  salary, count(*)
+FROM employee
+GROUP BY salary
+HAVING count(*) > 1
+
+========================================================================================================================
+DELETE = data hatao AND Table structure rahega
+TRUNCATE = table empty karo (DATA remove karo) table structure rahega + auto_increment reset
+DROP = table hi uda do (table delete)
+
+
+DELETE FROM Employee
+WHERE department = 'IT';
+
+DELETE FROM Employee;
+
+TRUNCATE FROM Employee;
+
+DROP FROM Employee;
+
+========================================================================================================================
+
+* Aise email addresses find karo jo multiple employees ke paas hain.
+
+select email count(*) as frequency
+from employee
+group by email
+having count(*) > 1
+
+
+* Aise employees find karo jinki salary company ki average salary se zyada hai.
+select * from employee
+where salary > (select avg(salary) from employee);
+
+
+* Har department ke employees me se un employees ko find karo jinki salary apne department ki average salary se zyada hai.
+select * from employee as e
+where salary > (
+                select avg(e2.salary)
+                from employee as e2
+                where e.dept_id  = e2.dept_id
+                )
+
+
+* Har department ka naam aur us department ki average salary nikalo, lekin sirf wahi departments dikhao jinki average salary ₹60,000 se zyada hai.
+select d.department_name, avg(e.salary) from employee as e
+inner join department as d on e.dept_id = d.dept_id
+group by d.dept_id, d.department_name
+having avg(e.salary) > 60000;
+
+
+* Employee table me second highest salary wale employee ka naam aur salary nikalo. (ye nth vale sabke liye chalega permanent solution h )
+SELECT name, salary
+FROM Employee
+WHERE salary = (
+    SELECT DISTINCT salary
+    FROM Employee
+    ORDER BY salary DESC
+    LIMIT 1 OFFSET 1
+);
+
+
+

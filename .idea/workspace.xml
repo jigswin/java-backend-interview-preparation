@@ -5,18 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94f30dcc-5e95-473c-a12a-25590c3688d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/arrays/RemoveDuplicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/collections/collection_details" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/FruitFrequency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/MostFrequentFruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/TwoSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/hashmap_details.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindDuplicateElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FirstNonRepeatingElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/ListContainsDuplicateOrNot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/RemoveDuplicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/comparable_and_comparator/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/comparable_and_comparator/details.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/FirstMostFrequentCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/FirstNonRepeatingChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/FirstUniqueElementFromList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/GroupAnagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/list/SecongHighestNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/list/SortList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/CommonEleBWThreeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/CommonElementBWToList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindDifferBWTwoList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindDuplicatesInLIst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindEleThatOccursOnlyOnce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindUnionOfTwoList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FirstRepeatingChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/RemoveDuplicateChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/RemoveDuplicateWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/sql/sql_q&amp;a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/strings/FrequencyCountForTargetChar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/strings/PrintFrequency.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/strings/PrintFrequency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/hashmap/TwoSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/hashmap/TwoSum.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +57,37 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Anagram.executor": "Run",
+    "Application.CommonEleBWThreeList.executor": "Run",
+    "Application.CommonElementBWToList.executor": "Run",
+    "Application.Employee.executor": "Run",
+    "Application.EmployeeSalarySort.executor": "Run",
+    "Application.FindDifferBWTwoList.executor": "Run",
     "Application.FindDuplicateElements.executor": "Run",
+    "Application.FindDuplicatesInLIst.executor": "Run",
+    "Application.FindEleThatOccursOnlyOnce.executor": "Run",
+    "Application.FindUnionOfTwoList.executor": "Run",
+    "Application.FirstMostFrequentCharacter.executor": "Run",
+    "Application.FirstNonRepeatingChar.executor": "Run",
     "Application.FirstNonRepeatingCharacter.executor": "Run",
     "Application.FirstNonRepeatingElement.executor": "Run",
     "Application.FirstRepeatingChar.executor": "Run",
+    "Application.FirstUniqueElementFromList.executor": "Run",
+    "Application.FrequencyCountForTargetChar.executor": "Run",
     "Application.FruitFrequency.executor": "Run",
+    "Application.GroupAnagram.executor": "Run",
     "Application.ListContainsDuplicateOrNot.executor": "Run",
     "Application.MostFrequentFruit.executor": "Run",
     "Application.PalindromeString.executor": "Run",
     "Application.PrintFrequency.executor": "Run",
     "Application.RemoveDuplicate.executor": "Run",
+    "Application.RemoveDuplicateChar.executor": "Run",
+    "Application.RemoveDuplicateWords.executor": "Run",
     "Application.ReverseString.executor": "Run",
+    "Application.SecongHighestNumber.executor": "Run",
+    "Application.SortList.executor": "Run",
     "Application.StringUtils.executor": "Run",
     "Application.TwoSum.executor": "Run",
+    "Application.com.jigar.interview.set.FirstRepeatingChar.executor": "Run",
     "Application.firstRepeatingChar.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -83,7 +111,7 @@
       <module name="java-backend-interview-preparation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jigar.interview.strings.*" />
+          <option name="PATTERN" value="com.jigar.interview.set.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,7 +124,7 @@
       <module name="java-backend-interview-preparation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jigar.interview.strings.*" />
+          <option name="PATTERN" value="com.jigar.interview.set.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
