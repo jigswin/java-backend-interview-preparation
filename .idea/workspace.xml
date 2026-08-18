@@ -5,28 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94f30dcc-5e95-473c-a12a-25590c3688d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/comparable_and_comparator/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/comparable_and_comparator/details.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/FirstMostFrequentCharacter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/FirstNonRepeatingChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/FirstUniqueElementFromList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/GroupAnagram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/list/SecongHighestNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/list/SortList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/CommonEleBWThreeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/CommonElementBWToList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindDifferBWTwoList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindDuplicatesInLIst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindEleThatOccursOnlyOnce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FindUnionOfTwoList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/FirstRepeatingChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/RemoveDuplicateChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/set/RemoveDuplicateWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/sql/sql_q&amp;a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/strings/FrequencyCountForTargetChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/MethodOverloading_vs_MethodOverriding_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/String_vs_StringBuilder_vs_StringBuffer_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_abstaraction_in_details?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_oops_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/differnce_bw_== vs .equals().?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/final_vs_finally_vs_finalize()_?" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/hashmap/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/hashmap/TwoSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/hashmap/TwoSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/sql/sql_q&amp;a" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/sql/sql_q&amp;a" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
