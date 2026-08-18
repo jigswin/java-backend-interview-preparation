@@ -102,4 +102,788 @@ WHERE salary = (
 );
 
 
+* Har department me jis employee ki salary sabse zyada hai, uska name, department aur salary nikalo.
+select name, department, salary from employee as e
+where salary = (
+    select max(salary)
+    from employee as e2
+    where e.dept_id = e2.dept_id
+);
+
+
+
+* Un employees ko find karo jinka department Department table me exist nahi karta.
+select * from employee as e
+left join department as d on d.dept_id = e.dept_id
+where d.dept_id is null;
+
+
+* Aise customers find karo jinhone ek bhi order nahi kiya.
+select c.customer_name from customer as c
+left join orders as o on o.c_id = c.id
+where o.c_id is null;
+
+
+=======================================================================================================================
+
+UNION vs UNION ALL
+
+DEFINATION ::==>  UNION combines the result of multiple queries and removes duplicate rows, whereas
+ UNION ALL combines the results without removing duplicates.
+ UNION ALL is generally faster because it doesn't perform duplicate elimination.
+
+UNION ===>  Duplicate records hata deta hai.
+UNION ko duplicate remove karne ke liye additional processing karni padti hai.
+
+EXAMPLE : 1
+Employee_2025:
+Jigar
+Rahul
+Amit
+
+Employee_2026:
+Jigar
+Raj
+
+
+SELECT name FROM Employee_2025
+UNION
+SELECT name FROM Employee_2026;
+
+OUTPUT :
+Jigar
+Rahul
+Amit
+Raj
+
+
+UNION ALL ==> Duplicates ko remove nahi karta
+UNION ALL faster hota hai. ✅
+
+
+EXAMPLE 2 :
+
+SELECT name FROM Employee_2025
+UNION ALL
+SELECT name FROM Employee_2026;
+
+OUTPUT :
+Jigar
+Rahul
+Amit
+Jigar
+Raj
+
+========================================================================================================================
+
+IN vs EXISTS
+
+INTERVIEW ANS ::==> IN is generally used when I want to compare a value against a set of values,
+while EXISTS is used when I only need to check whether a matching row exists.
+Performance depends on the database optimizer, data and indexes.
+
+IN :
+
+SELECT *
+FROM Employee e
+WHERE EXISTS (
+    SELECT 1
+    FROM Department d
+    WHERE d.dept_id = e.dept_id
+);
+
+
+Agar Department table se IDs aaye:
+
+10
+20
+30
+
+to ye basically check karega:
+
+Employee dept_id = 10? ✅
+Employee dept_id = 20? ✅
+Employee dept_id = 40? ❌
+
+
+EXISTS :
+
+SELECT *
+FROM Employee e
+WHERE EXISTS (
+    SELECT 1
+    FROM Department d
+    WHERE d.dept_id = e.dept_id
+);
+
+
+Har employee ke liye check:
+
+Employee dept_id = 10
+        ↓
+Department me 10 exist?
+        ↓
+YES → employee return
+
+
+
+ | `IN`                                       | `EXISTS`                                  |
+ | ------------------------------------------ | ----------------------------------------- |
+ | Value/list membership check                | Matching row existence check              |
+ | Subquery ke values se compare              | Correlated condition se existence check   |
+ | Small result set me convenient             | Large/correlated datasets me often useful |
+ | Duplicate values ka concept less important | First matching row milna enough           |
+
+========================================================================================================================
+
+Primary Key VS UNIQUE:
+
+DEFINATION ::==> Primary key is mainly used to uniquely identify each row,
+whereas a UNIQUE constraint is used to enforce uniqueness on one or more columns such as email, mobile number or username.
+A table can have only one primary-key constraint but can have multiple UNIQUE constraints.
+
+
+Primary Key :=>
+Table ki row ko uniquely identify karti hai.
+Duplicate nahi ho sakti.
+NULL nahi ho sakti.
+Ek table me normally one primary key constraint hota hai, although composite primary key me multiple columns ho sakte hain.
+
+| Primary Key                        | UNIQUE                                    |
+| ---------------------------------- | ----------------------------------------- |
+| Row ko uniquely identify karti hai | Column/value uniqueness enforce karti hai |
+| Duplicate ❌                        | Duplicate ❌                               |
+| NULL ❌                             | NULL handling DBMS-specific hoti hai      |
+| Table me one PK constraint         | Multiple UNIQUE constraints ho sakte hain |
+| Usually identifier like `id`       | Email, mobile, username etc.              |
+
+
+========================================================================================================================
+
+Database Index
+Interviewer:
+“Database index kya hota hai? Why do we use indexes? What are their disadvantages?”
+
+Simple samajh
+
+Database index ko tu book ke index jaisa samajh.
+Agar 500-page ki book me tujhe “Spring Boot” topic dhundhna hai aur index nahi hai, to page-by-page search karna padega.
+Lekin agar book ke last me index hai:
+Spring Boot → Page 245
+to directly page 245 par ja sakta hai.
+Database me bhi same concept hai.
+
+Suppose users table:
+
+SELECT *
+FROM users
+WHERE email = 'jigar@gmail.com';
+
+Agar email par index nahi hai, database ko potentially bahut saare rows scan karne pad sakte hain.
+Agar email par index hai, database efficiently matching row locate kar sakta hai.
+
+🎯 Interview me bol:
+
+“An index is a database data structure used to improve the performance of data retrieval operations. It helps the
+database find rows faster instead of scanning the entire table. Indexes are commonly created on columns that
+are frequently used in WHERE, JOIN, ORDER BY or sometimes GROUP BY conditions.”
+
+
+Then interviewer agar pooche “disadvantage?”
+Bol:
+“The main disadvantage is that indexes consume additional storage, and INSERT, UPDATE and DELETE operations can
+become slightly slower because the database also needs to maintain the index whenever the indexed data changes.”
+
+⭐ One-line example
+CREATE INDEX idx_user_email ON users(email);
+
+Ab:
+SELECT *
+FROM users
+WHERE email = 'jigar@gmail.com';
+
+email index ka benefit le sakti hai.
+
+
+========================================================================================================================
+
+Primary Key vs Index — Important
+
+Ye confusion interview me ho sakta hai.
+
+Primary Key automatically indexed hoti hai in most relational databases, but index aur primary key same cheez nahi hain.
+
+Primary Key → row ko uniquely identify karne ke liye constraint.
+Index → data retrieval ko fast karne ke liye structure.
+Ek table me multiple indexes ho sakte hain.
+Har indexed column necessarily unique nahi hota.
+
+Example:
+
+CREATE INDEX idx_city
+ON users(city);
+
+Agar 10,000 users Bangalore se hain, tab bhi city par normal index ho sakta hai.
+
+⚠️ Interview trap
+
+Interviewer:
+
+“Should we create indexes on every column?”
+
+❌ Never say yes.
+
+Bol:
+
+“No. We should create indexes selectively on columns that are frequently used for searching, joining, sorting or filtering. Too many indexes increase storage usage and can slow down write operations such as INSERT, UPDATE and DELETE.”
+
+🧠 Yaad rakhne ka formula
+
+INDEX = Fast Read ⚡ + Extra Storage 💾 + Slower Write ✍️
+
+Ye line yaad rakh bhai. Interview me kaam aayegi.
+
+=======================================================================================================================
+
+JOINs
+Interviewer:
+
+“What is a JOIN? Explain different types of JOINs with examples.”
+
+Ye bahut important hai, especially Java/Spring Boot backend role ke liye.
+
+Simple samajh
+
+JOIN ka use multiple tables se related data combine karne ke liye hota hai.
+
+Example:
+
+employees
+
+id	name	dept_id
+1	Jigar	10
+2	Rahul	20
+3	Amit	30
+
+departments
+
+id	department
+10	IT
+20	HR
+40	Finance
+1️⃣ INNER JOIN
+
+Sirf matching records deta hai.
+
+SELECT e.name, d.department
+FROM employees e
+INNER JOIN departments d
+ON e.dept_id = d.id;
+
+Result:
+
+Jigar  → IT
+Rahul  → HR
+
+Amit ka dept_id = 30 hai, matching department nahi hai, isliye nahi aayega.
+
+2️⃣ LEFT JOIN
+
+Left table ke saare records + matching right table records.
+
+SELECT e.name, d.department
+FROM employees e
+LEFT JOIN departments d
+ON e.dept_id = d.id;
+
+Result:
+
+Jigar  → IT
+Rahul  → HR
+Amit   → NULL
+3️⃣ RIGHT JOIN
+
+Right table ke saare records + matching left table records.
+
+SELECT e.name, d.department
+FROM employees e
+RIGHT JOIN departments d
+ON e.dept_id = d.id;
+
+Result me Finance bhi aayega:
+
+Jigar  → IT
+Rahul  → HR
+Amit   → NULL
+NULL   → Finance
+4️⃣ FULL OUTER JOIN
+
+Dono tables ke saare records.
+
+Matching ho to combine, otherwise NULL.
+
+Conceptually:
+
+LEFT JOIN + RIGHT JOIN
+
+⚠️ MySQL me FULL OUTER JOIN directly supported nahi hai; usually LEFT JOIN + UNION se achieve kiya jaata hai.
+
+🎯 Interview me bol
+
+“JOIN is used to combine data from two or more tables based on a related column. The commonly used joins are
+INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL OUTER JOIN. INNER JOIN returns only matching records,
+ while LEFT JOIN returns all records from the left table and matching records from the right table.”
+
+Agar interviewer specifically pooche “Most commonly used JOIN?”
+
+Bol:
+
+“In real-world applications, INNER JOIN and LEFT JOIN are probably the most commonly used.
+For example, LEFT JOIN is useful when we want all customers even if some customers don't have related orders.”
+
+🧠 Shortcut
+INNER → Matching only
+LEFT  → Everything from LEFT
+RIGHT → Everything from RIGHT
+FULL  → Everything from BOTH
+
+
+========================================================================================================================
+Subquery vs JOIN
+
+Neither is always better. It depends on the query, data size, indexes and execution plan.
+JOINs are generally a natural choice when we need to combine related tables,
+while subqueries can make certain filtering or existence checks simpler.
+ I would check the execution plan when performance is important.”
+
+
+| Subquery                                           | JOIN                                               |
+| -------------------------------------------------- | -------------------------------------------------- |
+| Query ke andar query                               | Multiple tables ko combine karta hai               |
+| Complex filtering me useful                        | Related data retrieve karne me useful              |
+| Readability kabhi-kabhi better                     | Multiple tables ke data ke liye natural            |
+| Performance case-dependent                         | Often efficient for relational data                |
+| `WHERE`, `SELECT`, `FROM` etc. me use ho sakti hai | `ON` condition ke through tables connect karta hai |
+
+
+=======================================================================================================================
+Normal Subquery  vs Correlated Subquery
+
+Normal Subquery:
+Independent Query → Result → Outer Query
+
+Correlated Subquery:
+Outer Row → Inner Query → Result
+Outer Next Row → Inner Query → Result
+
+| Normal Subquery                         | Correlated Subquery                                    |
+| --------------------------------------- | ------------------------------------------------------ |
+| Outer query se independent ho sakti hai | Outer query par depend karti hai                       |
+| Generally once evaluate ho sakti hai    | Conceptually outer rows ke according evaluate hoti hai |
+| Outer query ka reference zaroori nahi   | Outer query ka reference hota hai                      |
+
+
+========================================================================================================================
+
+What is Database Normalization?
+
+Simple definition :
+Normalization is the process of organizing data in database tables to reduce data redundancy and avoid data inconsistency.
+
+Simple words me:
+Same information ko unnecessarily baar-baar store nahi karna aur data ko logically separate tables me organize karna.
+
+========================================================================================================================
+
+What is Database Normalization?
+
+Jo information repeat ho rahi hai, usko properly separate tables me rakhna.
+
+
+==========================>
+1NF — Ek cell me ek value :
+
+| Employee | Skills                 |
+| -------- | ---------------------- |
+| Jigar    | Java, Spring Boot, SQL |
+
+Ek cell me 3 skills hain.
+
+| Employee | Skill       |
+| -------- | ----------- |
+| Jigar    | Java        |
+| Jigar    | Spring Boot |
+| Jigar    | SQL         |
+
+
+Yaad rakh:
+1NF = One cell → One value
+
+
+
+===========================>
+
+2NF — Data ko unnecessarily repeat mat karo
+
+| Employee | Project | Employee Name | Project Name |
+| -------- | ------- | ------------- | ------------ |
+| 1        | 101     | Jigar         | ERP          |
+| 1        | 102     | Jigar         | Inventory    |
+
+Yahan Jigar baar-baar aa raha hai.
+
+Aur agar same employee 10 projects par hai:
+
+Jigar
+Jigar
+Jigar
+Jigar
+...
+
+To employee ki information alag table me rakh sakte hain.
+
+Employee table
+| employee_id | employee_name |
+| ----------- | ------------- |
+| 1           | Jigar         |
+
+
+Project table
+| project_id | project_name |
+| ---------- | ------------ |
+| 101        | ERP          |
+| 102        | Inventory    |
+
+
+Aur ek mapping table:
+
+Employee_Project
+| employee_id | project_id |
+| ----------- | ---------- |
+| 1           | 101        |
+| 1           | 102        |
+
+
+Yaad rakh:
+
+2NF = Jo data kisi ek cheez ka hai, usko usi ke table me rakho.
+
+Interview terminology: No partial dependency.
+
+Lekin abhi interview me bas itna concept clear rakhna enough hai.
+
+
+=====================>
+
+3NF — Indirect information ko separate karo
+
+Maan le:
+
+| Employee ID | Employee Name | Department ID | Department Name |
+| ----------- | ------------- | ------------- | --------------- |
+| 1           | Jigar         | 10            | IT              |
+| 2           | Amit          | 10            | IT              |
+
+Ab dekho:
+Employee ID → Department ID
+
+Lekin:
+Department ID → Department Name
+
+Matlab Department Name directly employee se nahi, Department se related hai.
+To separate kar do:
+
+Employee
+| Employee ID | Employee Name | Department ID |
+| ----------- | ------------- | ------------- |
+| 1           | Jigar         | 10            |
+| 2           | Amit          | 10            |
+
+
+Department
+| Department ID | Department Name |
+| ------------- | --------------- |
+| 10            | IT              |
+
+Ab agar IT ka naam change karna hai, sirf ek jagah update karna hai.
+
+Yaad rakh:
+3NF = Indirectly related data ko separate karo.
+
+Technical interview line: No transitive dependency.
+
+*****************************************
+Teeno ko ekdum simple trick se yaad kar
+
+1NF → Ek cell me ek value
+2NF → Data unnecessarily repeat mat karo
+3NF → Indirectly related data ko separate karo
+
+Ya technical language:
+
+1NF → Atomic values
+2NF → No Partial Dependency
+3NF → No Transitive Dependency
+**************************************
+
+Interview me short answer
+
+Agar interviewer bole "Explain normalization", tu ye bol:
+
+“Normalization is used to organize database data properly and reduce duplicate data.
+ In 1NF, each cell contains a single value. In 2NF, we remove partial dependency and keep data related to the correct entity.
+ In 3NF, we remove indirect or transitive dependency by separating related information into different tables.”
+
+
+ ===========================================================================================================================
+
+ ACID Properties
+
+ Ye Java + Spring Boot interview ke liye especially important hai, kyunki iske saath @Transactional ka connection aata hai.
+
+ Interviewer:
+
+ “What are ACID properties in database transactions?”
+
+ ACID ke 4 parts hain:
+
+ A → Atomicity
+ C → Consistency
+ I → Isolation
+ D → Durability
+ 🟢 1. Atomicity — All or Nothing
+
+ Maan le bank transfer:
+
+ Jigar → ₹1000 → Rahul
+
+ Do operations hain:
+
+ 1. Jigar ke account se ₹1000 minus
+ 2. Rahul ke account me ₹1000 plus
+
+ Agar first operation successful hua but second fail ho gaya, to problem ho jayegi.
+
+ Atomicity ensure karti hai:
+
+ Ya to dono operations successful honge, ya dono rollback honge.
+
+ 🟡 2. Consistency — Data valid rehna chahiye
+
+ Transaction ke pehle database valid hai.
+
+ Transaction ke baad bhi database valid state me rehna chahiye.
+
+ Example:
+
+ Account balance cannot become invalid
+ Foreign key constraint violate nahi honi chahiye
+
+ Matlab transaction database ke defined rules/constraints ko break nahi karega.
+
+ 🔵 3. Isolation — Transactions ek dusre ko improperly affect na karein
+
+ Suppose ek saath 2 users same account ka data modify kar rahe hain.
+
+ Isolation ensure karti hai ki concurrent transactions ka execution controlled ho aur unwanted intermediate data ek transaction ko doosre se na dikhe.
+
+ Simple:
+
+ Multiple transactions simultaneously chal sakti hain, but unke interactions controlled hone chahiye.
+
+ 🔴 4. Durability — Commit hua data safe rahe
+
+ Agar transaction:
+
+ COMMIT
+
+ ho gaya aur immediately server crash ho gaya, tab bhi committed data lost nahi hona chahiye.
+
+ Committed data should survive system failure.
+
+ 🎯 Interview me bol
+
+ “ACID stands for Atomicity, Consistency, Isolation and Durability. Atomicity ensures that a transaction is completed completely or rolled back completely.
+ Consistency ensures that the database remains in a valid state.
+ Isolation controls how concurrent transactions interact with each other.
+ Durability ensures that once a transaction is committed, the changes are permanently persisted even in case of a system failure.”
+
+ 🔥 Spring Boot connection
+
+ Interviewer yahin se pooch sakta hai:
+
+ “How do you implement transaction management in Spring Boot?”
+
+ Tu bol sakta hai:
+
+ “In Spring Boot, we commonly use @Transactional to define transaction boundaries.
+  If an operation inside the transaction fails and the transaction is rolled back according to the configured
+   rollback rules, the database changes are rolled back.”
+
+ Example:
+
+ @Transactional
+ public void transferMoney(Long fromId, Long toId, BigDecimal amount) {
+
+     debitAccount(fromId, amount);
+     creditAccount(toId, amount);
+ }
+
+ Agar creditAccount() fail ho jaye, transaction rollback ho sakti hai, so debit bhi undo ho jayega.
+
+ 🧠 Shortcut
+ A → All or Nothing
+ C → Valid State
+ I → Controlled Concurrent Transactions
+ D → Committed Data Stays
+
+================================================================================================================================
+
+* What is a database transaction? What is the difference between COMMIT and ROLLBACK?
+
+🟢 Transaction kya hota hai?
+
+Simple language me:
+
+Transaction = database operations ka ek group jo ek single unit ki tarah execute hota hai.
+
+Example: Bank transfer:
+
+1. Jigar ke account se ₹1000 minus
+2. Rahul ke account me ₹1000 add
+
+Ye dono operations ek transaction ka part ho sakte hain.
+
+Agar dono successful:
+
+COMMIT
+
+Agar kuch fail:
+
+ROLLBACK
+🔥 COMMIT
+
+COMMIT ka matlab:
+
+Transaction ke changes permanently save kar do.
+
+Example:
+
+START TRANSACTION;
+
+UPDATE accounts
+SET balance = balance - 1000
+WHERE id = 1;
+
+UPDATE accounts
+SET balance = balance + 1000
+WHERE id = 2;
+
+COMMIT;
+
+Ab changes permanently save ho gaye.
+
+🔥 ROLLBACK
+
+ROLLBACK ka matlab:
+
+Current transaction ke changes undo kar do.
+
+Example:
+
+START TRANSACTION;
+
+UPDATE accounts
+SET balance = balance - 1000
+WHERE id = 1;
+
+-- Something goes wrong
+
+ROLLBACK;
+
+To jo changes transaction ke andar hue the, wo undo ho sakte hain.
+
+🧠 Simple real-world example
+
+Restaurant me online order place kar raha hai:
+
+1. Order create
+2. Payment process
+3. Inventory reduce
+4. Order confirm
+
+Agar payment fail ho gaya:
+
+Order create → Rollback
+Inventory reduce → Rollback
+
+Agar sab successful:
+
+COMMIT
+🎯 Interview me bol
+
+“A transaction is a group of database operations treated as a single logical unit. COMMIT permanently saves the changes made by the transaction, while ROLLBACK undoes the changes made during the current transaction when the transaction cannot be completed successfully.”
+
+🔥 Spring Boot connection
+
+Spring Boot me:
+
+@Transactional
+public void placeOrder() {
+
+    createOrder();
+
+    processPayment();
+
+    updateInventory();
+}
+
+Conceptually:
+
+@Transactional
+      ↓
+Begin Transaction
+      ↓
+createOrder()
+      ↓
+processPayment()
+      ↓
+updateInventory()
+      ↓
+SUCCESS
+      ↓
+COMMIT
+
+Agar required rollback condition ke according exception aaye:
+
+Exception
+   ↓
+ROLLBACK
+⚠️ Interview trap
+
+Interviewer:
+“Does @Transactional mean every exception always causes rollback?”
+
+❌ Don't say yes, always.
+
+Better:
+
+“Not necessarily. Spring's default rollback behavior primarily rolls back for unchecked exceptions such as RuntimeException and Error.
+ Checked exceptions generally don't trigger rollback by default, but we can configure rollback behavior using options such as rollbackFor.”
+
+Example:
+
+@Transactional(rollbackFor = Exception.class)
+public void processOrder() {
+    // ...
+}
+
+🔥 Ye point yaad rakhna — Spring Boot interview me kaam aa sakta hai.
+
+🧠 Shortcut
+COMMIT   → Save permanently ✅
+ROLLBACK → Undo transaction changes ↩️
+
+==============================================================================================================================
+
 
