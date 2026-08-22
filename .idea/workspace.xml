@@ -5,14 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94f30dcc-5e95-473c-a12a-25590c3688d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/MethodOverloading_vs_MethodOverriding_?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/String_vs_StringBuilder_vs_StringBuffer_?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_abstaraction_in_details?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_oops_?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/differnce_bw_== vs .equals().?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/final_vs_finally_vs_finalize()_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/lambda/LambdaPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/Abstract_vs_interface_in_java_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/Composition_in_java_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/Constructor_and_constructor_chaning_in_java_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/Garbage_collection_and_jvm_basic_in_java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/Lambda_and_Functional_interface" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/Mutable_class_in_java_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/Object_class_in_java_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_Stream_API_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_access_modifiers_in_java_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_encapsulation_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_inheritance_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_polymorphism_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/What_is_static_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/Wrapper_class_and_Autoboxing_and_Unboxing_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/jdk_jre_jvm_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/stack_vs_heap_memory_in_java_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/oops_java/this_vs_super_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/@Component, @Service, @Repository aur @Controller me difference" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/@PathVariable vs @RequestParam vs @RequestBody" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/@RequestMapping_vs_@GetMapping_@PostMapping_@PutMapping_@DeletreMapping" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/JPA_Relationship_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/Rest_api_complete_flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_IOC_and_Dependency_injection_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_are_starter_depedency_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_id_DTO_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_@Entiy_@Id_and_@GeneratedValue_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_@RestController_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_@SpringBootApplication_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_@Transactional_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_@Valid_and_Validation_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_Auto_configuration_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_Cascade_in_JPA_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_JPA_Repository_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_JPA_and_Hibernate_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_Lay_and_Egar_Loding_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_embaded_server_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_spring_beans_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/What_is_springboot_?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/springboot/spring_vs_springboot_?" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/sql/sql_q&amp;a" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/sql/sql_q&amp;a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/comparable_and_comparator/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/comparable_and_comparator/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/comparable_and_comparator/EmployeeSalarySort.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend-interview-preparation/target/classes/com/jigar/interview/comparable_and_comparator/EmployeeSalarySort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,58 +76,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Anagram.executor": "Run",
-    "Application.CommonEleBWThreeList.executor": "Run",
-    "Application.CommonElementBWToList.executor": "Run",
-    "Application.Employee.executor": "Run",
-    "Application.EmployeeSalarySort.executor": "Run",
-    "Application.FindDifferBWTwoList.executor": "Run",
-    "Application.FindDuplicateElements.executor": "Run",
-    "Application.FindDuplicatesInLIst.executor": "Run",
-    "Application.FindEleThatOccursOnlyOnce.executor": "Run",
-    "Application.FindUnionOfTwoList.executor": "Run",
-    "Application.FirstMostFrequentCharacter.executor": "Run",
-    "Application.FirstNonRepeatingChar.executor": "Run",
-    "Application.FirstNonRepeatingCharacter.executor": "Run",
-    "Application.FirstNonRepeatingElement.executor": "Run",
-    "Application.FirstRepeatingChar.executor": "Run",
-    "Application.FirstUniqueElementFromList.executor": "Run",
-    "Application.FrequencyCountForTargetChar.executor": "Run",
-    "Application.FruitFrequency.executor": "Run",
-    "Application.GroupAnagram.executor": "Run",
-    "Application.ListContainsDuplicateOrNot.executor": "Run",
-    "Application.MostFrequentFruit.executor": "Run",
-    "Application.PalindromeString.executor": "Run",
-    "Application.PrintFrequency.executor": "Run",
-    "Application.RemoveDuplicate.executor": "Run",
-    "Application.RemoveDuplicateChar.executor": "Run",
-    "Application.RemoveDuplicateWords.executor": "Run",
-    "Application.ReverseString.executor": "Run",
-    "Application.SecongHighestNumber.executor": "Run",
-    "Application.SortList.executor": "Run",
-    "Application.StringUtils.executor": "Run",
-    "Application.TwoSum.executor": "Run",
-    "Application.com.jigar.interview.set.FirstRepeatingChar.executor": "Run",
-    "Application.firstRepeatingChar.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "practice",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mac/IdeaProjects/Java-Backend-Interview-Preparation",
-    "onboarding.tips.debug.path": "/Users/mac/IdeaProjects/Java-Backend-Interview-Preparation/untitled/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Anagram.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CommonEleBWThreeList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CommonElementBWToList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Employee.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EmployeeSalarySort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindDifferBWTwoList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindDuplicateElements.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindDuplicatesInLIst.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindEleThatOccursOnlyOnce.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindUnionOfTwoList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FirstMostFrequentCharacter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FirstNonRepeatingChar.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FirstNonRepeatingCharacter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FirstNonRepeatingElement.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FirstRepeatingChar.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FirstUniqueElementFromList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FrequencyCountForTargetChar.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FruitFrequency.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GroupAnagram.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LambdaPractice.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListContainsDuplicateOrNot.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MostFrequentFruit.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PalindromeString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrintFrequency.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RemoveDuplicate.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RemoveDuplicateChar.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RemoveDuplicateWords.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReverseString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SecongHighestNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StringUtils.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TwoSum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.jigar.interview.set.FirstRepeatingChar.executor&quot;: &quot;Run&quot;,
+    &quot;Application.firstRepeatingChar.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;practice&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mac/IdeaProjects/Java-Backend-Interview-Preparation&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/mac/IdeaProjects/Java-Backend-Interview-Preparation/untitled/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/java-backend-interview-preparation" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FirstRepeatingChar">
     <configuration name="FirstRepeatingChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jigar.interview.strings.FirstRepeatingChar" />
       <module name="java-backend-interview-preparation" />

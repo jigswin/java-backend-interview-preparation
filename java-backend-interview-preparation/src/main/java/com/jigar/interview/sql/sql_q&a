@@ -887,3 +887,65 @@ ROLLBACK → Undo transaction changes ↩️
 ==============================================================================================================================
 
 
+COMPOSITE KEY
+
+## What is Composite Key?
+
+Jab kisi table ki 1 row ko uniquely identify karne ke liye **2 ya 2 se zyada columns ka combination** use hota hai, usse Composite Key kehte hain.
+
+## Example
+
+CREATE TABLE student_course (
+    student_id INT,
+    course_id INT,
+    PRIMARY KEY (student_id, course_id)
+);
+
+Yahan:
+
+student_id + course_id
+        ↓
+Composite Primary Key
+
+Same student same course ko dobara insert nahi kar sakte.
+
+Lekin:
+
+student_id = 101, course_id = 1
+student_id = 101, course_id = 2
+
+✅ Allowed
+
+## Important Point
+
+Composite Key me individually har column unique hona zaroori nahi hai.
+
+Uniqueness **combination** ki hoti hai.
+
+## Real-World Example
+
+Student aur Course ka relationship:
+
+Student 101 → Java
+Student 101 → SQL
+Student 102 → Java
+
+Yahan:
+
+(student_id + course_id)
+
+uniquely enrollment identify kar sakta hai.
+
+## Interview Answer
+
+"Composite key is a key made up of two or more columns that together uniquely identify a record. Each column individually may not be unique, but their combination must be unique."
+
+## Remember
+
+Primary Key → One or more columns
+
+Composite Key → Primary key made using multiple columns
+
+Example:
+
+PRIMARY KEY (student_id, course_id)
