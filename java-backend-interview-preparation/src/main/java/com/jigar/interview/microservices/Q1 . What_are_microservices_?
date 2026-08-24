@@ -1,0 +1,153 @@
+# Microservices — Q1: What are Microservices?
+
+## Microservices kya hai?
+
+Microservices ek architecture hai jisme ek large application ko
+**small, independent services** me divide kiya jata hai.
+
+Har service ka:
+
+- Apna specific business responsibility
+- Apna code
+- Independently deploy hone ki ability
+
+
+## Monolithic vs Microservices
+
+### Monolithic
+
+Ek hi application:
+
+Employee
+Product
+Order
+Payment
+Inventory
+     ↓
+One Application
+     ↓
+One Deployment
+
+
+Agar Payment module me small change hai:
+
+→ Puri application redeploy karni pad sakti hai.
+
+
+### Microservices
+
+        ┌─ Employee Service
+Client ─┼─ Product Service
+        ├─ Order Service
+        ├─ Payment Service
+        └─ Inventory Service
+
+
+Har service independently develop/deploy ho sakti hai.
+
+
+## Real-World Example
+
+E-commerce application:
+
+Product Service
+→ Products manage
+
+
+Order Service
+→ Orders manage
+
+
+Payment Service
+→ Payments manage
+
+
+Inventory Service
+→ Stock manage
+
+
+Notification Service
+→ Email/SMS manage
+
+
+## Important Point
+
+Microservices ka matlab sirf:
+
+"Application ko multiple services me tod dena"
+
+nahi hai.
+
+Services ideally:
+
+→ Loosely coupled
+→ Independently deployable
+→ Clearly defined business responsibility
+
+
+## Communication
+
+Services ek dusre se communicate kar sakti hain using:
+
+REST API
+→ Synchronous
+
+
+Kafka
+→ Asynchronous
+
+
+Example:
+
+Order Service
+    ↓ REST
+Payment Service
+
+
+Order Service
+    ↓ Kafka
+Notification Service
+
+
+## Advantages
+
+- Independent deployment
+- Independent scaling
+- Fault isolation better
+- Teams independently work kar sakti hain
+- Different technologies use karna possible
+
+
+## Challenges
+
+- Distributed system complexity
+- Network failures
+- Monitoring difficult
+- Data consistency
+- Deployment/DevOps complexity
+
+
+## Interview Answer
+
+"Microservices is an architectural style where a large application is divided into small, loosely coupled and independently deployable services, with each service responsible for a specific business capability."
+
+
+## Easy Memory
+
+Monolith
+→ One BIG application
+
+
+Microservices
+→ Many SMALL independent services
+
+
+E-commerce:
+
+Product
+Order
+Payment
+Inventory
+Notification
+
+→ Separate Services
