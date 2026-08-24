@@ -1,0 +1,115 @@
+# Microservices — Q2: Monolithic vs Microservices
+
+## Monolithic Architecture
+
+Puri application ek single application hoti hai.
+
+Example:
+
+        E-Commerce Application
+                |
+    ┌───────────┼───────────┐
+ Product      Order       Payment
+    |            |            |
+    └────────────┼────────────┘
+                 |
+              Database
+
+
+Agar Product module me change hai:
+
+→ Puri application build/deploy ho sakti hai.
+
+
+## Microservices Architecture
+
+Application ko multiple independent services me divide karte hain.
+
+        E-Commerce
+             |
+    ┌────────┼─────────┐
+    ↓        ↓         ↓
+ Product   Order    Payment
+ Service   Service   Service
+
+    ↓        ↓         ↓
+  DB       DB        DB
+
+
+Har service independently deploy/scale ho sakti hai.
+
+
+## Main Differences
+
+Monolithic
+→ One application
+
+Microservices
+→ Multiple services
+
+
+Monolithic
+→ Usually one deployment unit
+
+Microservices
+→ Independent deployment
+
+
+Monolithic
+→ Scaling often whole application
+
+Microservices
+→ Required service independently scale kar sakte hain
+
+
+Monolithic
+→ Simple initially
+
+Microservices
+→ Distributed system complexity
+
+
+## Real Example
+
+Agar e-commerce me:
+
+Payment Service par traffic bahut high hai.
+
+Monolithic:
+→ Puri application ko scale karna pad sakta hai.
+
+
+Microservices:
+→ Sirf Payment Service ke multiple instances run kar sakte hain.
+
+
+## Important Interview Point
+
+Microservices ka matlab automatically
+"har service ka separate database compulsory"
+nahi hota, although **database-per-service** commonly recommended pattern hai for loose coupling and ownership.
+
+
+## Interview Answer
+
+"Monolithic architecture keeps the application's functionality in a single deployable unit, whereas microservices divide the application into independently deployable services, each focused on a specific business capability."
+
+
+## Easy Memory
+
+MONOLITH
+→ One BIG application
+
+
+MICROSERVICES
+→ Many SMALL independent services
+
+
+Example:
+
+Product
+Order
+Payment
+Inventory
+
+→ Separate Services
