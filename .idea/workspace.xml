@@ -5,40 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94f30dcc-5e95-473c-a12a-25590c3688d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/File_handling/Q2: File vs Path" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Bhai interview me ye **3 annotations** pakke kar:.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q10: RedisTemplate vs @Cacheable + Serialization.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q11 — Distributed Cache.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q12 — Redis + Microservices.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q13: Redis PUB-Sub.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q14 — Redis Persistence.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q15 — FINAL INTERVIEW SCENARIO.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q1: Redis kya hai.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q2: Redis vs MySQL Database.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q3: Redis Data Types.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q4: CACHING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q5: CACHE-ASIDE PATTERN.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q6: TTL (TIME TO LIVE) &amp; CACHE EXPIRATION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q7: CACHE INVALIDATION STRATEGIES.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q8: CACHE EVICTION POLICIES.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Redis/Q9: REDIS IN SPRING BOOT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q10: Kafka vs RabbitMQ" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q11: Consumer Rebalancing &amp; Partition Assignment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q12: Consumer Lag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q13: Dead Letter Topic (DLT) &amp; Error Handling" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q14: Kafka Transactions &amp; Exactly-Once Semantics " afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q15: Message Ordering &amp; Idempotency" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q16: Spring Boot Kafka Configuration" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q17: Complete Real-World Architecture" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q1:KAFKA — BASIC NOTES" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q2: Kafka Architecture" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q3: Topic and Partition" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q4: Offset &amp; Consumer Group" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q5: Replication &amp; Fault Tolerance" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q6: Message Delivery Semantics" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q7: Producer acks, Retry &amp; Reliability" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q8: Consumer Offset Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/kafka/Q9: Serialization &amp; Deserialization" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q1 — AWS kya hai.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q10 — SPRING BOOT DEPLOYMENT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q11 — MICROSERVICES ON AWS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q12 — SQS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q13 — AWS LAMBDA.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q2 — EC2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q3 — S3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q4 — IAM.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q5 — RDS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q6 — VPC.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q7 — LOAD BALANCER.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q8 — AUTO SCALING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q9 — CLOUDWATCH.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q1 — WHAT IS DOCKER.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q10 — SPRING BOOT DOCKERIZATION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q11 — DOCKER + MICROSERVICES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q12 — FINAL INTERVIEW SCENARIO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q2 — IMAGE vs CONTAINER.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q3 — DOCKERFILE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q4 — IMPORTANT DOCKER COMMANDS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q5 — DOCKERFILE INSTRUCTIONS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q6 — IMAGE BUILD PROCESS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q7 — DOCKER VOLUME.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q8 — DOCKER NETWORK.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q9 — DOCKER COMPOSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Spring_Security/ROLE BASED AUTHORIZATION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Spring_Security/SPRING SECURITY — AUTHENTICATION, AUTHORIZATION &amp; JWT.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
