@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94f30dcc-5e95-473c-a12a-25590c3688d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q1 — AWS kya hai.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q10 — SPRING BOOT DEPLOYMENT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q11 — MICROSERVICES ON AWS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q12 — SQS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q13 — AWS LAMBDA.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q2 — EC2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q3 — S3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q4 — IAM.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q5 — RDS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q6 — VPC.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q7 — LOAD BALANCER.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q8 — AUTO SCALING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Aws/Q9 — CLOUDWATCH.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q1 — WHAT IS DOCKER.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q10 — SPRING BOOT DOCKERIZATION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q11 — DOCKER + MICROSERVICES.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q12 — FINAL INTERVIEW SCENARIO.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q2 — IMAGE vs CONTAINER.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q3 — DOCKERFILE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q4 — IMPORTANT DOCKER COMMANDS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q5 — DOCKERFILE INSTRUCTIONS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q6 — IMAGE BUILD PROCESS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q7 — DOCKER VOLUME.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q8 — DOCKER NETWORK.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Docker/Q9 — DOCKER COMPOSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Spring_Security/ROLE BASED AUTHORIZATION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-backend-interview-preparation/src/main/java/com/jigar/interview/Spring_Security/SPRING SECURITY — AUTHENTICATION, AUTHORIZATION &amp; JWT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="94f30dcc-5e95-473c-a12a-25590c3688d4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
